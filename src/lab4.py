@@ -1,9 +1,9 @@
 import textwrap
 
-class laptop:
-    def __init__(self,  developer = "", frequency = 0.0, ram = 0):
+Class laptop:
+    def __init__(self, manufacturer = "", frequency = 0.0, ram = 0):
 
-        self.__developer = developer
+        self.__manufacturer = manufacturer
         self.__frequency = frequency
         self.__ram = ram
         
@@ -11,7 +11,7 @@ class laptop:
         self.date_of_manufacture = 2021
         self.display_type = "OLED"
 
-    def get_developer(self):
+    def get_manufacturer(self):
         return self.__developer
 
     def get_frequency(self):
@@ -21,14 +21,14 @@ class laptop:
         return self.__ram
     
     def __str__(self):
-        return f"laptop {self.__developer}, {self.__frequency}, {self.__ram},"
+        return f"laptop {self.__manufacturer}, {self.__frequency}, {self.__ram}"
     
     def __repr__(self):
-        return textwrap.dedent(f''' developer:  {self.__developer}: " 
+        return textwrap.dedent(f''' developer:  {self.__manufacturer}: " 
     frequency = {self.__frequency}GHz "
     ram = {self.__ram}GB "
     date_of_manufacture: {self.date_of_manufacture} "
-     display_type {self.display_type} 
+    display_type {self.display_type} 
     ''')
     
     def __del__(self):
@@ -46,4 +46,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+
 
