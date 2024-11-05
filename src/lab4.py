@@ -7,7 +7,6 @@ class laptop:
         self.__frequency = frequency
         self.__ram = ram
         
-        
         self.date_of_manufacture = 2021
         self.display_type = "OLED"
 
@@ -24,7 +23,7 @@ class laptop:
         return f"laptop {self.__manufacturer}, {self.__frequency}, {self.__ram}"
     
     def __repr__(self):
-        return textwrap.dedent(f''' developer:  {self.__manufacturer}: " 
+        return textwrap.dedent(f''' developer: {self.__manufacturer} 
     frequency = {self.__frequency}GHz "
     ram = {self.__ram}GB "
     date_of_manufacture: {self.date_of_manufacture} "
@@ -46,5 +45,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-
