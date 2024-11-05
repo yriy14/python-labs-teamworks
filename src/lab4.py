@@ -1,6 +1,6 @@
 import textwrap
 
-Class laptop:
+class laptop:
     def __init__(self, manufacturer = "", frequency = 0.0, ram = 0):
 
         self.__manufacturer = manufacturer
