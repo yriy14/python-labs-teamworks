@@ -1,0 +1,47 @@
+import textwrap
+
+class Laptop:
+    def __init__(self, manufacturer = "", frequency = 0.0, ram = 0):
+
+        self.__manufacturer = manufacturer
+        self.__frequency = frequency
+        self.__ram = ram
+        
+        self.date_of_manufacture = 2021
+        self.display_type = "OLED"
+
+    def get_manufacturer(self):
+        return self.__manufacturer
+
+    def get_frequency(self):
+        return self.__frequency
+    
+    def get_ram(self):
+        return self.__ram
+    
+    def __str__(self):
+        return f"laptop {self.__manufacturer}, {self.__frequency}, {self.__ram}"
+    
+    def __repr__(self):
+        return textwrap.dedent(f''' developer: {self.__manufacturer} 
+    frequency = {self.__frequency}GHz "
+    ram = {self.__ram}GB "
+    date_of_manufacture: {self.date_of_manufacture} "
+    display_type {self.display_type} 
+    ''')
+    
+    def __del__(self):
+        print(f"{self.__str__()} is wiped off")
+
+def main():
+        
+    obj1 = Laptop("mac", 3.6, 16)
+    obj2 = Laptop("dell", 2.5, 16)
+    obj3 = Laptop("asus", 5.2, 32)
+        
+    print(repr(obj1))
+    print(repr(obj2))
+    print(repr(obj3))
+
+if __name__ == '__main__':
+    main()
