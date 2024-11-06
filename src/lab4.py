@@ -11,7 +11,7 @@ class laptop:
         self.display_type = "OLED"
 
     def get_manufacturer(self):
-        return self.__developer
+        return self.__manufacturer
 
     def get_frequency(self):
         return self.__frequency
