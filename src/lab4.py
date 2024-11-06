@@ -1,6 +1,6 @@
 import textwrap
 
-class laptop:
+class Laptop:
     def __init__(self, manufacturer = "", frequency = 0.0, ram = 0):
 
         self.__manufacturer = manufacturer
@@ -35,9 +35,9 @@ class laptop:
 
 def main():
         
-    obj1 = laptop("mac", 3.6, 16)
-    obj2 = laptop("dell", 2.5, 16)
-    obj3 = laptop("asus", 5.2, 32)
+    obj1 = Laptop("mac", 3.6, 16)
+    obj2 = Laptop("dell", 2.5, 16)
+    obj3 = Laptop("asus", 5.2, 32)
         
     print(repr(obj1))
     print(repr(obj2))
